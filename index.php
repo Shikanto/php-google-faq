@@ -1,9 +1,32 @@
 <?php
 
+$navLinks = [
+    [
+        "link" => "Introduzione",
+        "active" => "false",
+    ],
+    [
+        "link" => "Norme sulla privacy",
+        "active" => "false",
+    ],
+    [
+        "link" => "Termini di servizio",
+        "active" => "false",
+    ],
+    [
+        "link" => "Tecnologie",
+        "active" => "false",
+    ],
+    [
+        "link" => "Domande frequenti",
+        "active" => "true",
+    ],
+];
+
 $dates = [
     [
-        "title" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
-        "sizeTitle" => "h2 class='mt-5 mb-2'",
+        "title" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?</h2>",
+        "startTagTitle" => "<h2 class='mt-5 mb-3'>",
         "paragraphs" => [
             "<p class='mb-3'
             >La recente <a href='#'>decisione della Corte di giustizia dell'Unione europea</a> ha profonde conseguenze per i motori di ricerca in Europa. 
@@ -37,8 +60,8 @@ $dates = [
         ]
     ],
     [
-        "title" => "Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
-        "sizeTitle" => "h2 class='mt-5 mb-2'",
+        "title" => "Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?</h2>",
+        "startTagTitle" => "<h2 class='mt-5 mb-3'>",
         "paragraphs" => [
             "<p class='mb-3'>
             Sappiamo che la sicurezza e la privacy sono importanti per te e lo sono anche per noi. Per noi è imperativo offrire un'elevata sicurezza e 
@@ -54,13 +77,13 @@ $dates = [
             Puoi leggere ulteriori informazioni sulla sicurezza online, incluso come proteggere te e la tua famiglia online, nel <a href='#'>Centro Google per la sicurezza online</a>.
             </p><br>",
             "<p class='mb-3'>
-            <a href='#'>Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo</a>.
+            <a href='#'>Scopri</a> quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo.
             </p><br>"
         ]
     ],
     [
-        "title" => "Stabilire il paese associato al tuo account",
-        "sizeTitle" => "h4 class='mt-5 mb-2'",
+        "title" => "Stabilire il paese associato al tuo account</h4>",
+        "startTagTitle" => "<h4 class='mt-5 mb-3'>",
         "paragraphs" => [
             "<p class='mb-3'>
             Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, 
@@ -73,13 +96,13 @@ $dates = [
             "<p class='mb-3'>
             Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e 
             il paese in cui risiedi, l'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale.
-            Contattaci<a href='#'><i class='fas fa-external-link-alt'></i></a>se ritieni che il paese associato al tuo account sia sbagliato.
+            Contattaci <a href='#'><i class='fas fa-external-link-alt'></i></a> se ritieni che il paese associato al tuo account sia sbagliato.
             </p><br>"
         ]
     ],
     [
-        "title" => "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
-        "sizeTitle" => "h2 class='mt-5 mb-2'",
+        "title" => "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?</h2>",
+        "startTagTitle" => "<h2 class='mt-5 mb-3'>",
         "paragraphs" => [
             "<p class='mb-3'>
             I risultati di ricerca di Google rispecchiano i contenuti pubblicamente disponibili sul Web. I motori di ricerca non possono rimuovere i contenuti 
@@ -89,6 +112,21 @@ $dates = [
             nei risultati di ricerca di Google, <a href='#'>fai clic qui</a>. Una volta che i contenuti saranno stati rimossi e che Google avrà rilevato l'aggiornamento, 
             le informazioni non verranno più visualizzate nei risultati di ricerca di Google. In caso di una richiesta di rimozione urgente, è inoltre possibile 
             <a href='#'>visitare la nostra pagina di assistenza per avere ulteriori informazioni</a>.
+            </p><br>",
+        ]
+    ],
+    [
+        "title" => "Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?</h2>",
+        "startTagTitle" => "<h2 class='mt-5 mb-3'>",
+        "paragraphs" => [
+            "<p class='mb-3'>
+            In alcuni casi sì. Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di destinazione 
+            anche l'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di <a href='#'>URL referrer</a>. Talvolta, l'URL della pagina dei risultati di ricerca
+             potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), 
+             nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell'URL negli URL referrer. Questo comportamento può fare eccezione, 
+             ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili <a href='#'>qui</a>. Le query di ricerca o le informazioni 
+             contenute nell'URL referrer potrebbero essere disponibili mediante Google Analytics o un'API (Application Programming Interface). 
+             Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole chiave che hanno determinato il clic su un annuncio.
             </p><br>",
         ]
     ],
@@ -108,11 +146,45 @@ $dates = [
     <title>Boogle</title>
 </head>
 <body>
+    <header class="mb-10">
+        <div class="topNav d-flex">
+            <img src="./Google-Logo.png" alt="google-logo">
+            <h1>Privacy & Termini</h1>
+        </div>
+        <div class="barNav">
+            <ul class="d-flex">
+             <?php
+                foreach ($navLinks as $links) {
+                    //var_dump($links);
+                    $nameLink = $links['link'];
+                    $active = $links['active'];
+                    //var_dump($nameLink);
+                    if($active === "true") {
+                        echo "<li><a class='active' href='#'>
+                        $nameLink</a></li>";
+                    } else {
+                        echo "<li><a href='#'>$nameLink</a></li>";
+                    };
+                };
+             ?>
+            </ul>
+        </div>
+    </header>
     <div class="container">
         
         <?php
-            foreach ($dates as $keyDates => $infoParagrahp) {
-                var_dump($infoParagrahp);
+            foreach ($dates as $infoParagrahp) {
+                //var_dump($infoParagrahp);
+                //var_dump($keyDate);
+                $title = $infoParagrahp["title"];
+                $tagTitle = $infoParagrahp["startTagTitle"];
+                echo $tagTitle, $title;
+                $paragraphs = $infoParagrahp["paragraphs"];
+                foreach ($paragraphs as $paragraph) {
+                    //var_dump($paragraphs);
+                    //var_dump($paragraph);
+                    echo $paragraph;
+                };
             };
         ?>
     </div>
