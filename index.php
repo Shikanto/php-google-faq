@@ -82,6 +82,27 @@ $dates = [
         ]
     ],
     [
+        "title" => "Perché il mio account è associato a un paese?</h2>",
+        "startTagTitle" => "<h2 class='mt-5 mb-3'>",
+        "paragraphs" => [
+            "<p class='mb-3'>
+            Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:
+            </p><br>",
+            "<ol class='list-ol mb-3'>
+            <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
+                <ol class='list-ol' type='a'>
+                <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
+                <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
+                </ol>
+            </li>
+            <li>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
+            </ol><br>",
+            "<p class='mb-3'>
+            Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.
+            </p><br>",
+        ]
+    ],
+    [
         "title" => "Stabilire il paese associato al tuo account</h4>",
         "startTagTitle" => "<h4 class='mt-5 mb-3'>",
         "paragraphs" => [
@@ -178,8 +199,11 @@ $dates = [
                 //var_dump($keyDate);
                 $title = $infoParagrahp["title"];
                 $tagTitle = $infoParagrahp["startTagTitle"];
+                
                 echo $tagTitle, $title;
+                
                 $paragraphs = $infoParagrahp["paragraphs"];
+               
                 foreach ($paragraphs as $paragraph) {
                     //var_dump($paragraphs);
                     //var_dump($paragraph);

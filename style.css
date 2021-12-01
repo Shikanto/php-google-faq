@@ -53,3 +53,9 @@ li a{
 .mb-10{
     margin-bottom: 100px;
 }
+
+.list-ol li{
+    padding-left: 20px;
+    margin-left: -15px;
+    margin-top: 15px;
+}
